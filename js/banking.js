@@ -29,3 +29,26 @@ document.getElementById('deposit-button').addEventListener('click',function(){
     // get the deposit input field 
     depositInput.value ='';
 })
+
+
+
+// handle withdraw button event
+document.getElementById('withdraw-button').addEventListener('click',function(){
+    const withdrawInput =document.getElementById('withdraw-input');
+    const withdrawAmountText = withdrawInput.value;
+    const newWithdrawAmount = parseFloat(withdrawAmountText);
+
+
+    // ste withdraw total 
+
+    const withdrawTotal = document.getElementById('withdraw-total');
+    const previousWithdrawText = withdrawTotal.innerText;
+    const previousWithdrawTotal = parseFloat(previousWithdrawText);
+    const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
+    withdrawTotal.innerText = newWithdrawTotal;
+
+
+    // clear withdraw input
+
+    withdrawInput.value = '';
+})
