@@ -7,4 +7,7 @@ document.getElementById('login-submit').addEventListener('click',function(){
     if(userEmail=='shamimbhuiyan1508@gmail.com' && userPassword == 'shamim'){
         window.location.href='banking.html';
     }
-})
+});
+ 
+
+
